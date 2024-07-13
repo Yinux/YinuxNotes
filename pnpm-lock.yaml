@@ -18,7 +18,7 @@ importers:
         version: 2.4.31
       axios:
         specifier: ^1.7.2
-        version: 1.7.2
+        version: 1.7.2(debug@4.3.5)
       blueimp-md5:
         specifier: ^2.19.0
         version: 2.19.0
@@ -38,12 +38,24 @@ importers:
       '@arco-design/web-vue':
         specifier: ^2.55.3
         version: 2.55.3(vue@3.4.31)
+      '@braintree/sanitize-url':
+        specifier: ^7.0.4
+        version: 7.0.4
       '@types/blueimp-md5':
         specifier: ^2.18.2
         version: 2.18.2
       '@types/jquery':
         specifier: ^3.5.30
         version: 3.5.30
+      cytoscape:
+        specifier: ^3.30.0
+        version: 3.30.0
+      cytoscape-cose-bilkent:
+        specifier: ^4.1.0
+        version: 4.1.0(cytoscape@3.30.0)
+      debug:
+        specifier: ^4.3.5
+        version: 4.3.5
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -64,10 +76,10 @@ importers:
         version: 5.3.3(@types/node@18.15.11)
       vitepress:
         specifier: 1.3.0
-        version: 1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2)(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)
+        version: 1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2(debug@4.3.5))(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)
       vitepress-plugin-mermaid:
         specifier: 2.0.16
-        version: 2.0.16(mermaid@10.9.1)(vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2)(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0))
+        version: 2.0.16(mermaid@10.9.1)(vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2(debug@4.3.5))(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0))
       vue:
         specifier: ^3.4.31
         version: 3.4.31
@@ -223,6 +235,9 @@ packages:
 
   '@braintree/sanitize-url@6.0.4':
     resolution: {integrity: sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==}
+
+  '@braintree/sanitize-url@7.0.4':
+    resolution: {integrity: sha512-hPYRrKFoI+nuckPgDJfyYAkybFvheo4usS0Vw0HNAe+fmGBQA5Az37b/yStO284atBoqqdOUhKJ3d9Zw3PQkcQ==}
 
   '@docsearch/css@3.6.0':
     resolution: {integrity: sha512-+sbxb71sWre+PwDK7X2T8+bhS6clcVMLwBPznX45Qu6opJcgRjAp7gYSDzVFp187J+feSj5dNBN1mJoi6ckkUQ==}
@@ -2385,6 +2400,8 @@ snapshots:
 
   '@braintree/sanitize-url@6.0.4': {}
 
+  '@braintree/sanitize-url@7.0.4': {}
+
   '@docsearch/css@3.6.0': {}
 
   '@docsearch/js@3.6.0(@algolia/client-search@4.24.0)(search-insights@2.7.0)':
@@ -2714,13 +2731,13 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/integrations@10.11.0(axios@1.7.2)(focus-trap@7.5.4)(vue@3.4.31)':
+  '@vueuse/integrations@10.11.0(axios@1.7.2(debug@4.3.5))(focus-trap@7.5.4)(vue@3.4.31)':
     dependencies:
       '@vueuse/core': 10.11.0(vue@3.4.31)
       '@vueuse/shared': 10.11.0(vue@3.4.31)
       vue-demi: 0.14.8(vue@3.4.31)
     optionalDependencies:
-      axios: 1.7.2
+      axios: 1.7.2(debug@4.3.5)
       focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2802,9 +2819,9 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  axios@1.7.2:
+  axios@1.7.2(debug@4.3.5):
     dependencies:
-      follow-redirects: 1.15.6
+      follow-redirects: 1.15.6(debug@4.3.5)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -3405,7 +3422,9 @@ snapshots:
     dependencies:
       tabbable: 6.2.0
 
-  follow-redirects@1.15.6: {}
+  follow-redirects@1.15.6(debug@4.3.5):
+    optionalDependencies:
+      debug: 4.3.5
 
   for-each@0.3.3:
     dependencies:
@@ -4355,14 +4374,14 @@ snapshots:
       '@types/node': 18.15.11
       fsevents: 2.3.3
 
-  vitepress-plugin-mermaid@2.0.16(mermaid@10.9.1)(vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2)(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)):
+  vitepress-plugin-mermaid@2.0.16(mermaid@10.9.1)(vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2(debug@4.3.5))(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)):
     dependencies:
       mermaid: 10.9.1
-      vitepress: 1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2)(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)
+      vitepress: 1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2(debug@4.3.5))(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0)
     optionalDependencies:
       '@mermaid-js/mermaid-mindmap': 9.3.0
 
-  vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2)(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0):
+  vitepress@1.3.0(@algolia/client-search@4.24.0)(@types/node@18.15.11)(axios@1.7.2(debug@4.3.5))(markdown-it-mathjax3@4.3.2(encoding@0.1.13))(postcss@8.4.39)(search-insights@2.7.0):
     dependencies:
       '@docsearch/css': 3.6.0
       '@docsearch/js': 3.6.0(@algolia/client-search@4.24.0)(search-insights@2.7.0)
@@ -4373,7 +4392,7 @@ snapshots:
       '@vue/devtools-api': 7.3.5
       '@vue/shared': 3.4.31
       '@vueuse/core': 10.11.0(vue@3.4.31)
-      '@vueuse/integrations': 10.11.0(axios@1.7.2)(focus-trap@7.5.4)(vue@3.4.31)
+      '@vueuse/integrations': 10.11.0(axios@1.7.2(debug@4.3.5))(focus-trap@7.5.4)(vue@3.4.31)
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.3.0

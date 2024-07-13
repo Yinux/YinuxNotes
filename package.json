@@ -12,8 +12,12 @@
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.3",
+    "@braintree/sanitize-url": "^7.0.4",
     "@types/blueimp-md5": "^2.18.2",
     "@types/jquery": "^3.5.30",
+    "cytoscape": "^3.30.0",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "debug": "^4.3.5",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",
