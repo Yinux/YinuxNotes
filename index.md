@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Yinux Notes"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Yinux 笔记"
+  text: "记录编程中的点点滴滴"
+  tagline: 好记性不如烂笔头
   actions:
     - theme: brand
       text: Markdown Examples
