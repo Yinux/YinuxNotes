@@ -2,7 +2,7 @@
 node_modules/
 
 # Dist files
-dist/
+# dist/
 lib/
 
 # Test coverage files
