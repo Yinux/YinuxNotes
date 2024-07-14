@@ -13,6 +13,7 @@ vite.config.timestamp*.*
 
 node_modules
 *.local
+!dist
 dist/*
 cache/*
 
