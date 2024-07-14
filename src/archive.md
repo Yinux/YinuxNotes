@@ -23,24 +23,18 @@ unsave: true
 
 ## 2020
 
-- [Egg.js 实现 OAuth2 授权码方式鉴权](./egg-oauth.md)
 - [Git subtree](./git-subtree.md)
-- [Docker Portianer](./docker-portianer.md)
 - [frp 内网穿透](./frp.md)
 - [家用宽带联机开发环境部署](./frp-ddns.md)
-- [CentOS 快速搭建开发环境](./centos-develop-env.md)
 - [localhost 开启 HTTPS](./localhost-ssl-cert.md)
 - [UmiJS 之我见](./umijs-ux.md)
 - [JavaScript async](./javascript-async.md)
 - [前端概念图](./frontend-map.md)
-- [CentOS 安装配置 OpenVPN](./centos-openvpn.md)
 - [Git 提交规范](./git-commitlint.md)
 - [iOS 开发环境搭建](./ios-develop.md)
 
 ## 2019
 
-- [CentOS 防火墙](./centos-firewall.md)
-- [CentOS 网络](./centos-network.md)
 - [HTTP DELETE 方法传递参数](./delete-with-body.md)
 - [Git WebHooks](./git-webhook.md)
 - [Git 排除忽略子目录](./git-ignore-exclude.md)
@@ -48,9 +42,7 @@ unsave: true
 - [MySQL 定时备份](./mysql-backup.md)
 - [CentOS 安装 MySQL 8](./mysql-install.md)
 - [vi 基本操作](./vi.md)
-- [CentOS 入坑指南](./centos-intro.md)
 - [钉钉云推送自建RDS最佳实践](./ding-cloud-push.md)
-- [Chrome inspect 开发钉钉应用](./chrome-inspect.md)
 
 ## 2018
 
@@ -82,16 +74,11 @@ unsave: true
 
 ## 2014
 
-- [CentOS 安装 KVM](./centos-kvm.md)
 - [Linux 个人目录规划](./linux-home.md)
 
 ## 2013
 
 - [WebVirtCloud 部署笔记](./webvirt-cloud.md)
-
-## 2012
-
-- [CentOS 查看各种信息](./centos-info.md)
 
 ## 2011
 

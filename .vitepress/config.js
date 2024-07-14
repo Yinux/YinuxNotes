@@ -21,6 +21,7 @@ export default withMermaid({
     ['link', { rel: 'stylesheet', href: '/styles/app.css' }],
     // ['script', { src: '/scripts/baidu-hm.js' }]
   ],
+  ignoredeadlinks: true,
   themeConfig: {
     lastUpdatedText: '最近更新',
     logo: 'logo.png',
