@@ -16,7 +16,7 @@ hasCJKLanguage = true
 # 默认每页列表显示的文章数目
 paginate = 12
 # 谷歌分析代号 [UA-XXXXXXXX-X]
-googleAnalytics = ""
+# googleAnalytics = ""
 # 版权描述，仅仅用于 SEO
 copyright = "Yinux"
 
@@ -48,7 +48,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "首页"
     url = "/"
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-    title = ""
+    title = "首页"
   [[menu.main]]
     weight = 2
     identifier = "posts"
@@ -59,7 +59,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "文章"
     url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-    title = ""
+    title = "所有文章"
   [[menu.main]]
     weight = 3
     identifier = "tags"
@@ -67,7 +67,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = "标签"
     url = "/tags/"
-    title = ""
+    title = "所有标签"
   [[menu.main]]
     weight = 4
     identifier = "categories"
@@ -75,7 +75,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     post = ""
     name = "分类"
     url = "/categories/"
-    title = ""
+    title = "所有分类"
+  [[menu.main]]
+    weight = 5
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "关于"
+    url = "/about/"
+    title = "关于"
 
 [params]
   # 网站默认主题样式 ["auto", "light", "dark"]
@@ -204,7 +212,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
-      social = true
+      social = false
       #  免责声明 (支持 HTML 格式)
       disclaimer = ""
     # 主页文章列表
@@ -352,15 +360,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 是否添加 NavigationControl
       navigation = true
       # 是否添加 GeolocateControl
-      geolocate = true
+      geolocate = false
       # 是否添加 ScaleControl
       scale = true
       # 是否添加 FullscreenControl
       fullscreen = true
     #  文章页面的分享信息设置
     [params.page.share]
-      enable = true
-      Twitter = true
+      enable = false
+      Twitter = false
       Facebook = true
       Linkedin = false
       Whatsapp = false
