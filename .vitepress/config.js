@@ -13,7 +13,7 @@ export default withMermaid({
   description: '约定大于配置，配置大于编码。自上而下分解，自下而上构建。数据驱动算法，目标领导计划。',
   lang: 'zh-CN',
   srcDir: './src', // 博客源文件目录
-  outDir: './dist', // 方便部署各种Pages
+  // outDir: './dist', // 方便部署各种Pages
   cacheDir: './cache',
   lastUpdated: true,
   head: [
