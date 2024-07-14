@@ -1,14 +1,14 @@
 {
-  "name": "charles7c-repo",
-  "description": "查尔斯的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
-  "author": "Charles7c",
+  "name": "yinux-notes",
+  "description": "Yinux 的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
+  "author": "Yinux",
   "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.3",
