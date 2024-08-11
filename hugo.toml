@@ -31,7 +31,7 @@ enableEmoji = true
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # 作者配置
-[author]
+[taxonomies]
   name = "Yinux"
   email = "yinux@yinux.org"
   link = "https://gitee.com/Yinux"
